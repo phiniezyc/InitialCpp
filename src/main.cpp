@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <vector>
 
 using namespace std; // used so don't have to type std::cout etc...
 int main() {
@@ -15,7 +15,14 @@ int main() {
 
   cout << "Bonjour !  T'en veux combien ?" <<endl;
   cin >> pizzas;
-  cout <<"C'est " <<price*pizzas <<" Euros.";
+  cout <<"C'est " <<price*pizzas <<" Euros." <<endl <<endl; //gives 2 spaces (but other ways to do)
+
+  // Vectors
+   vector <int> vec {10,20,30,40,50};
+   vec.at(0) = 100;
+   vec.back() = 1000;
+
+   cout <<vec.at(3);
 
   return 0;
 }
