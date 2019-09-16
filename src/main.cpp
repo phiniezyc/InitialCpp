@@ -1,9 +1,25 @@
 #include <iostream>
 #include <vector>
+// To compile run: g++ -Wall -std=c++14 main.cpp
+// Terminal: ./a.out (or can just hit play on Run Code Extension)
 
 using namespace std; // used so don't have to type std::cout etc...
+
+class Name {
+  public:
+  string name;
+  void greet() {
+    cout << "Hello " <<name <<endl;
+  };
+};
+
 int main() {
   int favoriteNumber;
+
+  Name customer; // instantiates Name class w/ an instance named "customer"
+  customer.name = "Chance";
+  customer.greet();
+  
   cout << "Enter Number between 1 and 100: " <<endl;
   cin >> favoriteNumber;
   cout << "That's my favorite number!" <<endl;
